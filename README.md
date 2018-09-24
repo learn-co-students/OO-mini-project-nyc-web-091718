@@ -11,8 +11,8 @@ We've provided you with a console that you can use to test your code. To enter a
 ### `Recipe`
 Build the following methods on the Recipe class
 
-- `Recipe.all`
-should return all of the recipe instances
+<!-- - `Recipe.all`
+should return all of the recipe instances -->
 - `Recipe.most_popular`
 should return the recipe instance with the highest number of users (the recipe that has the most recipe cards)
 - `Recipe#users`
@@ -28,12 +28,12 @@ should take an array of ingredient instances as an argument, and associate each 
 ### `User`
 Build the following methods on the User class
 
-- `User.all`
+<!-- - `User.all`
 should return all of the user instances
 - `User#recipes`
-should return all of the recipes this user has recipe cards for
-- `User#add_recipe_card`
-should accept a recipe instance as an argument, as well as a date and rating, and create a new recipe card for this user and the given recipe
+should return all of the recipes this user has recipe cards for -->
+<!-- - `User#add_recipe_card`
+should accept a recipe instance as an argument, as well as a date and rating, and create a new recipe card for this user and the given recipe -->
 - `User#declare_allergen`
 should accept an ingredient instance as an argument, and create a new allergen instance for this user and the given ingredient
 - `User#allergens`
@@ -48,7 +48,7 @@ should return the recipe most recently added to the user's cookbook.
 ### `RecipeCard`
 A RecipeCard is the join between a user instance and a recipe instance.  This is a has-many-through relationship.
 Build the following methods on the RecipeCard class:  
-
+<!--
 - `RecipeCard.all`
 should return all of the RecipeCard instances
 - `RecipeCard#date`
@@ -58,7 +58,7 @@ should return the rating (an integer) a user has given their entry
 - `RecipeCard#user`
 should return the user to which the entry belongs
 - `RecipeCard#recipe`
-should return the recipe to which the entry belongs
+should return the recipe to which the entry belongs -->
 
 ### `Ingredient`
 Build the following methods on the Ingredient class

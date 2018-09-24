@@ -16,5 +16,14 @@ class User
     RecipeCard.new(self, recipe, rating, date)
   end
 
+  def recipes
+    user_recipe_cards = RecipeCard.all.select do |rc|
+      rc.user == self
+    end
+
+    user_recipe_cards.map do |card|
+      card.recipe
+    end
+  end
 
 end
